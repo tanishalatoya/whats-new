@@ -1,0 +1,34 @@
+/* STYLING FOR NEWS ARTICLE CARDS */
+
+.news-article {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 4px 3px 1px 1px rgba(0, 0, 0, 0.3);
+  height: 30em;
+  margin-bottom: 5%;
+  position: relative;
+  width: 40%;
+}
+
+img {
+  height: 15em;
+  width: 100%;
+}
+
+.news-article h3, p:first-of-type {
+  padding: 2.5%;
+}
+
+.news-article div {
+  background: #feff7e;
+  font-size: 1.3em;
+  height: 10%;
+  padding-top: 2%;
+  position: absolute;
+    bottom: 0;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}

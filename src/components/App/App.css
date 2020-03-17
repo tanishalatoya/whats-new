@@ -5,9 +5,17 @@
 }
 
 .app {
-  display: flex;
-  background: #141527;
-  height: 100vh;
+  background: #002d60;
+  min-height: 100vh;
   text-align: center;
   width: 100%;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 10vh auto;
+  grid-template-areas:
+  "page-title search-form"
+  "navigation articles-container";
 }

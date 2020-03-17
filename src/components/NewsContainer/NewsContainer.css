@@ -1,0 +1,7 @@
+/* STYLING FOR NEWS CONTAINTER */
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  grid-area: articles-container;
+}
