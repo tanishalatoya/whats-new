@@ -1,33 +1,36 @@
 /* STYLING FOR NAVIGATION AREA */
 
 .navigation {
-  color: #fff;
-  font-size: 1.5em;
   grid-area: navigation;
   padding-left: 8%;
 }
 
-.navigation div {
-  cursor: pointer;
+.navigation .menu-button {
+  background: none;
+  border: none;
+  color: #fff;
   display: flex;
-  height: 3.5%;
+  font-size: 1.5em;
+  height: 2.5em;
   margin-bottom: 2.5%;
+  padding-left: 5%;
   text-transform: capitalize;
+  width: 100%;
 }
 
-div:focus {
+.menu-button:focus {
   border-radius: 0 50px 50px 0;
   background: orange;
   outline: none;
 }
 
-.navigation div img {
-  height: 40%;
-  width: 15%;
+.navigation .menu-button img {
+  height: 1.5em;
+  width: 1.3em;
   margin-right: 2%;
 }
 
-.navigation div p,
-.navigation div img {
+.navigation .menu-button p,
+.navigation .menu-button img {
   margin-top: 5.5%;
 }
