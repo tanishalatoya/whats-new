@@ -7,26 +7,26 @@ import startup from '../../assets/startup.svg';
 import heart from '../../assets/heart.svg';
 
 
-const Menu = () => {
+const Menu = ({ updateCurrentNewsTopic }) => {
   return (
     <nav className='navigation'>
-      <div>
+      <div onClick={() => updateCurrentNewsTopic('local')}>
         <img src={pin} alt='icon' />
         <p>Local News</p>
       </div>
-      <div>
+      <div onClick={() => updateCurrentNewsTopic('technology')}>
         <img src={projectManagement} alt='icon' />
         <p>Technology</p>
       </div>
-      <div>
+      <div onClick={() => updateCurrentNewsTopic('entertainment')}>
         <img src={clapperboard} alt='icon' />
         <p>Entertainment</p>
       </div>
-      <div>
+      <div onClick={() => updateCurrentNewsTopic('science')}>
         <img src={startup} alt='icon' />
         <p>Science</p>
       </div>
-      <div>
+      <div onClick={() => updateCurrentNewsTopic('health')}>
         <img src={heart} alt='icon' />
         <p>Health</p>
       </div>
