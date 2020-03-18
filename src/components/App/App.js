@@ -29,11 +29,25 @@ class App extends Component {
     this.setState({ currentNewsTopic: this.state[currentKey] })
   }
 
+  findArticles = (query) => {
+    const stateKeys = Object.keys(this.state)
+    const allNewsArticles = stateKeys.reduce((combinedTopics, topic) => {
+      if (topic !== 'currentNewsTopic') {
+        combinedTopics = combinedTopics.concat(this.state[topic])
+      }
+      return combinedTopics;
+    }, [])
+    const queriedArticles = allNewsArticles.filter(article => {
+      return article.headline.includes(query) || article.description.includes(query)
+    })
+    this.setState({ currentNewsTopic: queriedArticles })
+  }
+
   render () {
     return (
       <main className="app">
         <HeaderTitle />
-        <SearchForm />
+        <SearchForm findArticles={this.findArticles} />
         <Menu updateCurrentNewsTopic={this.updateCurrentNewsTopic} />
         <NewsContainer
           currentNewsTopic={this.state.currentNewsTopic}
