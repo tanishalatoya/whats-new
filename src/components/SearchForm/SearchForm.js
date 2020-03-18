@@ -13,6 +13,16 @@ class SearchForm extends Component {
     this.setState({ [event.target.name]: event.target.value })
   }
 
+  searchArticles = (event) => {
+    event.preventDefault();
+    this.props.findArticles(this.state.search);
+    this.clearInput();
+  }
+
+  clearInput = () => {
+    this.setState({ search: '' })
+  }
+
   render() {
     return (
       <form>
@@ -20,10 +30,11 @@ class SearchForm extends Component {
           name='search'
           type='text'
           placeholder='Search for news articles here.'
-          value={this.state.name}
+          value={this.state.search}
           onChange={this.updateSearchInfo}
-        ></input>
-        <button>Search Now</button>
+        >
+        </input>
+        <button onClick={this.searchArticles}>Search Now</button>
       </form>
     )
   }
