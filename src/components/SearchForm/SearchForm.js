@@ -34,7 +34,7 @@ class SearchForm extends Component {
           onChange={this.updateSearchInfo}
         >
         </input>
-        <button onClick={this.searchArticles}>Search Now</button>
+        <button id='search-button' onClick={this.searchArticles}>Search Now</button>
       </form>
     )
   }
