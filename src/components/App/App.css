@@ -19,3 +19,7 @@ main {
   "page-title search-form"
   "navigation articles-container";
 }
+
+button {
+  cursor: pointer;
+}
