@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NewsContainer from '../NewsContainer/NewsContainer';
 import Menu from '../Menu/Menu'
+import HeaderTitle from '../HeaderTitle/HeaderTitle'
 import local from '../../data/local';
 import technology from '../../data/technology';
 import entertainment from '../../data/entertainment';
@@ -30,6 +31,7 @@ class App extends Component {
   render () {
     return (
       <main className="app">
+        <HeaderTitle />
         <Menu updateCurrentNewsTopic={this.updateCurrentNewsTopic} />
         <NewsContainer
           currentNewsTopic={this.state.currentNewsTopic}
