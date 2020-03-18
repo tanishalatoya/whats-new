@@ -11,6 +11,11 @@
   cursor: pointer;
   display: flex;
   height: 3.5%;
+  text-transform: capitalize;
+}
+
+.selected-topic {
+  background: orange;
 }
 
 .navigation div img {
