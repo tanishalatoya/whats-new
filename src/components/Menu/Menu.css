@@ -4,15 +4,16 @@
   color: #fff;
   font-size: 1.5em;
   grid-area: navigation;
+  padding-left: 8%;
 }
 
 .navigation div {
   display: flex;
-  justify-content: center;
   height: 3.5%;
 }
 
-navigation img {
-  height: auto;
-  width: 10%;
+.navigation div img {
+  height: 40%;
+  width: 15%;
+  margin-right: 2%;
 }
