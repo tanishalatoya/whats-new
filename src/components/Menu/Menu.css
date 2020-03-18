@@ -1,0 +1,19 @@
+/* STYLING FOR NAVIGATION AREA */
+
+.navigation {
+  color: #fff;
+  font-size: 1.5em;
+  grid-area: navigation;
+  padding-left: 8%;
+}
+
+.navigation div {
+  display: flex;
+  height: 3.5%;
+}
+
+.navigation div img {
+  height: 40%;
+  width: 15%;
+  margin-right: 2%;
+}
