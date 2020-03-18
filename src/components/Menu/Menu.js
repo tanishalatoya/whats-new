@@ -1,35 +1,44 @@
 import React from 'react';
 import './Menu.css';
-import pin from '../../assets/pin.svg';
-import projectManagement from '../../assets/project-management.svg';
-import clapperboard from '../../assets/clapperboard.svg';
-import startup from '../../assets/startup.svg';
-import heart from '../../assets/heart.svg';
-
+import local from '../../assets/pin.svg';
+import technology from '../../assets/project-management.svg';
+import entertainment from '../../assets/clapperboard.svg';
+import science from '../../assets/startup.svg';
+import health from '../../assets/heart.svg';
 
 const Menu = ({ updateCurrentNewsTopic }) => {
+    const icons = [
+      {
+        img: local,
+        name: 'local'
+      },
+      {
+        img: technology,
+        name: 'technology'
+      },
+      {
+        img: entertainment,
+        name: 'entertainment'
+      },
+      {
+        img: science,
+        name: 'science'
+      },
+      {
+        img: health,
+        name: 'health'
+      },
+
+    ]
+
   return (
     <nav className='navigation'>
-      <div onClick={() => updateCurrentNewsTopic('local')}>
-        <img src={pin} alt='icon' />
-        <p>Local News</p>
-      </div>
-      <div onClick={() => updateCurrentNewsTopic('technology')}>
-        <img src={projectManagement} alt='icon' />
-        <p>Technology</p>
-      </div>
-      <div onClick={() => updateCurrentNewsTopic('entertainment')}>
-        <img src={clapperboard} alt='icon' />
-        <p>Entertainment</p>
-      </div>
-      <div onClick={() => updateCurrentNewsTopic('science')}>
-        <img src={startup} alt='icon' />
-        <p>Science</p>
-      </div>
-      <div onClick={() => updateCurrentNewsTopic('health')}>
-        <img src={heart} alt='icon' />
-        <p>Health</p>
-      </div>
+      {icons.map(icon => (
+        <div onClick={() => updateCurrentNewsTopic(`${icon.name}`)}>
+          <img src={icon.img} alt={icon.name} />
+          <p>{icon.name}</p>
+        </div>
+      ))}
     </nav>
   )
 }
