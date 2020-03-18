@@ -27,14 +27,13 @@ const Menu = ({ updateCurrentNewsTopic }) => {
       {
         img: health,
         name: 'health'
-      },
-
+      }
     ]
 
   return (
     <nav className='navigation'>
       {icons.map(icon => (
-        <div onClick={() => updateCurrentNewsTopic(`${icon.name}`)}>
+        <div tabIndex='0' id={icon.name} onClick={() => updateCurrentNewsTopic(`${icon.name}`)}>
           <img src={icon.img} alt={icon.name} />
           <p>{icon.name}</p>
         </div>
