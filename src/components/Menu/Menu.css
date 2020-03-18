@@ -11,15 +11,23 @@
   cursor: pointer;
   display: flex;
   height: 3.5%;
+  margin-bottom: 2.5%;
   text-transform: capitalize;
 }
 
-.selected-topic {
+div:focus {
+  border-radius: 0 50px 50px 0;
   background: orange;
+  outline: none;
 }
 
 .navigation div img {
   height: 40%;
   width: 15%;
   margin-right: 2%;
+}
+
+.navigation div p,
+.navigation div img {
+  margin-top: 5.5%;
 }
