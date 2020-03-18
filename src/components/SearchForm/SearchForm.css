@@ -1,0 +1,23 @@
+/* STYLING FOR SEARCH FORM */
+
+form {
+  padding-top: 1.5%;
+}
+
+input {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2em;
+  padding: .5%;
+  margin-right: 2%;
+  width: 75%;
+}
+
+button {
+  background: #feff7e;
+  border: none;
+  font-size: 1.2em;
+  padding: .5% 2.5%;
+  border-radius: 50px;
+}
