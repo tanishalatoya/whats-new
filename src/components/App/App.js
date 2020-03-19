@@ -40,12 +40,12 @@ class App extends Component {
     const queriedArticles = allNewsArticles.filter(article => {
       return article.headline.includes(query) || article.description.includes(query)
     })
-    this.setState({ currentNewsTopic: queriedArticles })
+      this.setState({ currentNewsTopic: queriedArticles })
   }
 
   render () {
     return (
-      <main className="app">
+      <main className='app'>
         <HeaderTitle />
         <SearchForm findArticles={this.findArticles} />
         <Menu updateCurrentNewsTopic={this.updateCurrentNewsTopic} />
