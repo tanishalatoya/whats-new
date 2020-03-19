@@ -25,6 +25,6 @@ What's new is a single page application that displays news articles onto the DOM
 
 
 ## Additional Notes
-See outstanding issues for the repo [here:](https://github.com/tanishalatoya/whats-new/issues).
+See outstanding issues for the repo [here](https://github.com/tanishalatoya/whats-new/issues).
 
 
