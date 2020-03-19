@@ -1,14 +1,11 @@
 # What's New?
 Contributor: [Tanisha L Davey](https://github.com/tanishalatoya)
 
-This application was built with `create-react-app`.
-
-![image](https://media.giphy.com/media/fw21BiJVztQUxwj3bn/giphy.gif)
 
 ## Abstract
 **Technologies used:** _React, jQuery, React Testing Library, Jest-DOM Library, Webpack_
 
-What's new is a single page application that displays news articles onto the DOM based on a selected category or a search value. This app was built over 4 days using React. Currently, the news articles are being pulled in via a static database and will be updated in a future iteration to get news articles using a browser's fetch API. 
+What's new is a single page application built with `create-react-app` that displays news articles onto the DOM based on a selected category or a search value. This app was built over 4 days using React. Currently, the news articles are being pulled in via a static database and will be updated in a future iteration to get news articles using a browser's fetch API. 
 
 
 ## Demo
