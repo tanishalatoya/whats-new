@@ -40,16 +40,7 @@ class App extends Component {
     const queriedArticles = allNewsArticles.filter(article => {
       return article.headline.includes(query) || article.description.includes(query)
     })
-
-    if (queriedArticles.length === 0) {
-      this.setState({ currentNewsTopic: local })
-    } else {
-      let id = 0
-      queriedArticles.forEach(article => {
-      article.id = (id += 1)
-      })
       this.setState({ currentNewsTopic: queriedArticles })
-    }
   }
 
   render () {
