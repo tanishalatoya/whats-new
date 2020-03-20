@@ -30,17 +30,22 @@ class App extends Component {
   }
 
   findArticles = (query) => {
-    const stateKeys = Object.keys(this.state)
-    const allNewsArticles = stateKeys.reduce((combinedTopics, topic) => {
-      if (topic !== 'currentNewsTopic') {
-        combinedTopics = combinedTopics.concat(this.state[topic])
-      }
-      return combinedTopics;
-    }, [])
+    let key = 0;
+    const allNewsArticles = [
+      ...this.state.local,
+      ...this.state.technology,
+      ...this.state.entertainment,
+      ...this.state.health,
+      ...this.state.science
+    ];
+    const articlesWithNewId = allNewsArticles.forEach(article => {
+      article.id = (key += 1);
+    })
     const queriedArticles = allNewsArticles.filter(article => {
       return article.headline.includes(query) || article.description.includes(query)
-    })
-      this.setState({ currentNewsTopic: queriedArticles })
+    });
+
+    this.setState({ currentNewsTopic: queriedArticles })
   }
 
   render () {
