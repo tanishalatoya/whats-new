@@ -38,10 +38,9 @@ class App extends Component {
       ...this.state.health,
       ...this.state.science
     ];
-    const articlesWithNewId = allNewsArticles.forEach(article => {
-      article.id = (key += 1);
-    })
+
     const queriedArticles = allNewsArticles.filter(article => {
+      article.id = (key += 1);
       return article.headline.includes(query) || article.description.includes(query)
     });
 
