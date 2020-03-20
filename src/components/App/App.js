@@ -41,7 +41,7 @@ class App extends Component {
 
     const queriedArticles = allNewsArticles.filter(article => {
       article.id = (key += 1);
-      return article.headline.includes(query) || article.description.includes(query)
+      return article.headline.toLowerCase().includes(query) || article.description.toLowerCase().includes(query)
     });
 
     this.setState({ currentNewsTopic: queriedArticles })
