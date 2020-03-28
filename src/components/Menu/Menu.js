@@ -10,30 +10,35 @@ const Menu = ({ updateCurrentNewsTopic }) => {
     const icons = [
       {
         img: local,
-        name: 'local'
+        name: 'local',
+        id: 1
       },
       {
         img: technology,
-        name: 'technology'
+        name: 'technology',
+        id: 2
       },
       {
         img: entertainment,
-        name: 'entertainment'
+        name: 'entertainment',
+        id: 3
       },
       {
         img: science,
-        name: 'science'
+        name: 'science',
+        id: 4
       },
       {
         img: health,
-        name: 'health'
+        name: 'health',
+        id: 5
       }
     ]
 
   return (
     <nav className='navigation'>
       {icons.map(icon => (
-        <button className='menu-button' onClick={() => updateCurrentNewsTopic(`${icon.name}`)}>
+        <button key={icon.id} className='menu-button' onClick={() => updateCurrentNewsTopic(`${icon.name}`)}>
           <img src={icon.img} alt={icon.name} />
           <p>{icon.name}</p>
         </button>
