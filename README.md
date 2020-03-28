@@ -23,9 +23,8 @@ What's new is a single page application built with `create-react-app` that displ
 ## Future Iterations
 * Complete testing for react components as needed
 * Utilize the fetch API to get data dynamically
+* Make app responsive for mobile viewing
+* Add router to dynamically navigate to routes within the app
 
-
-## Additional Notes
-See outstanding issues for the repo [here](https://github.com/tanishalatoya/whats-new/issues).
 
 
