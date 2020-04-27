@@ -3,7 +3,7 @@ Contributor: [Tanisha L Davey](https://github.com/tanishalatoya)
 
 
 ## Abstract
-**Technologies used:** _React, jQuery, React Testing Library, Jest-DOM Library, Webpack_
+**Technologies used:** _React, React Testing Library, Jest-DOM Library_
 
 What's new is a single page application built with `create-react-app` that displays news articles onto the DOM based on a selected category or a search value. This app was built over the course of four days using React. Currently, the news articles are being pulled in via a static database and will be updated in a future iteration to get news articles using a browser's fetch API. 
 
